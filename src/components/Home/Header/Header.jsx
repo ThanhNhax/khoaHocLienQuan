@@ -61,6 +61,23 @@ export default class Header extends Component {
                 </NavLink>
               </div>
             </li>
+            <li className="nav-item dropdown">
+              <NavLink
+                className="nav-link dropdown-toggle"
+                to={"/"}
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Redux Bài Tập
+              </NavLink>
+              <div className="dropdown-menu" aria-labelledby="dropdownId">
+                <NavLink className="dropdown-item" to="giohangredux">
+                  Redux Giỏ hàng
+                </NavLink>
+              </div>
+            </li>
           </ul>
           <form className="d-flex my-2 my-lg-0">
             <input

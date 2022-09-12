@@ -11,17 +11,24 @@ import Header from './components/Home/Header/Header';
 import Home from './pages/Home/Home';
 import BaiTapGioHang from './pages/BaiTapGioHang/BaiTapGioHang';
 import Link from './pages/Link/Link';
+import BTGioHangRedux from './pages/BiaTapRedux/BaiTapGioHang/BTGioHangRedux';
+import Detail from './pages/Detail/Detail';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
-        <Route path='' element={<App />}></Route>
-        <Route path='baitapgiohang' element={<BaiTapGioHang />}></Route>
-        <Route index element={<Home />}></Route>
-        <Route path='/link' element={<Link />}></Route>
-
+        <Route path='' element={<App />}>
+          <Route index element={<Home />}></Route>
+          <Route path='detail'>
+            <Route path=':id' element={<Detail />}> </Route>
+          </Route>
+          <Route path='baitapgiohang' element={<BaiTapGioHang />}></Route>
+          <Route index element={<Home />}></Route>
+          <Route path='/link' element={<Link />}></Route>
+          <Route path='/giohangredux' element={<BTGioHangRedux />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   </Provider>
