@@ -13,6 +13,7 @@ import BaiTapGioHang from './pages/BaiTapGioHang/BaiTapGioHang';
 import Link from './pages/Link/Link';
 import BTGioHangRedux from './pages/BiaTapRedux/BaiTapGioHang/BTGioHangRedux';
 import Detail from './pages/Detail/Detail';
+import Search from './pages/Search/Search';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
@@ -28,6 +29,7 @@ root.render(
           <Route index element={<Home />}></Route>
           <Route path='/link' element={<Link />}></Route>
           <Route path='/giohangredux' element={<BTGioHangRedux />}></Route>
+          <Route path='/search' element={<Search />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
