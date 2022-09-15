@@ -46,6 +46,7 @@ export default function Search() {
       }
     };
   }, [searchParam.get("keyword")]);
+
   return (
     <form className="container" onSubmit={handleSubmit}>
       <h3>Search</h3>
