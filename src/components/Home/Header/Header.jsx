@@ -60,6 +60,9 @@ export default function Header() {
               <NavLink className="dropdown-item" to="baitapgiohang">
                 Bài Tập Giỏ hàng
               </NavLink>
+              <NavLink className="dropdown-item" to="btqlnguoidung">
+                Bài Tập Quản Lý Người Dùng
+              </NavLink>
             </div>
           </li>
           <li className="nav-item dropdown">

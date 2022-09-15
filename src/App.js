@@ -4,7 +4,7 @@ import Header from './components/Home/Header/Header';
 function App() {
   return (
 
-    <div className='App'>
+    <div className=''>
       <Header />
       {/* Vị trí component sẽ được load ở link con */}
       <Outlet />
